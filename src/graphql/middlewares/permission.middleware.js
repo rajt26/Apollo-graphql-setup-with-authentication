@@ -11,7 +11,8 @@ const isUser = rule()(async (parent, args, ctx, info) => {
 
 const permissions = shield({
   Query: {
-    '*': isAdmin
+    '*': isAdmin,
+    'getUsers': allow
   },
   Mutation: {
     '*': isAdmin,

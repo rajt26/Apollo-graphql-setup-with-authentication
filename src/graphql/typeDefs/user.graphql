@@ -1,3 +1,4 @@
+scalar Date
 enum Role {
   ADMIN
   USER
@@ -7,11 +8,12 @@ type User {
   id: ID
   name: String
   email:String
-  profileImage:String
-  contact:String
-  username:String
-  password:String
   role:Role
+  dob:Date
+  contact:String
+  password:String
+  city:String
+  zipCode:Int
 }
 
 type Token {
@@ -19,14 +21,15 @@ type Token {
 }
 
 input UserCreateInput {
-  id: ID
+ id: ID
   name: String
   email:String
-  profileImage:String
-  contact:String
-  username:String
-  password:String
   role:Role
+  dob:Date
+  contact:String
+  password:String
+  city:String
+  zipCode:Int
 }
 
 input LoginCreateInput {
