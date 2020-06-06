@@ -12,7 +12,7 @@
   "dependencies": {
     "@sentry/node": "^5.14.2",
     "apollo-server": "2.9.16",
-    "apollo-server-express": "2.9.16",
+    "apollo-server-express": "2.14.2",
     "babel-node": "0.0.1-security",
     "bcrypt-nodejs": "0.0.3",
     "bcryptjs": "2.4.3",
